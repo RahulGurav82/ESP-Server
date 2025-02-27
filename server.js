@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json()); // Parse JSON request body
 
 // Connect to MongoDB
-mongoose.connect("mongodb://localhost:27017/espdata", {
+mongoose.connect("mongodb+srv://rahul:rahul@cluster0.l5ugu.mongodb.net/espdata", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }).then(() => console.log("MongoDB Connected"))
